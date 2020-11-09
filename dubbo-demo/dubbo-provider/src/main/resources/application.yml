@@ -1,0 +1,19 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /auto-provider
+
+spring:
+  application:
+    name: dubbo-auto-provider
+
+dubbo:
+  scan:
+    base-packages: ukelele.demo.dubbo.provider.service.impl
+  protocol:
+    name: dubbo
+    port: 12345
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  metadata-report:
+    address: zookeeper://127.0.0.1:2181

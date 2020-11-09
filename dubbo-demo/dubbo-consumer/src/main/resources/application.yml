@@ -1,0 +1,12 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /auto-consumer
+
+spring:
+  application:
+    name: dubbo-auto-consumer
+
+dubbo:
+    registry:
+      address: zookeeper://127.0.0.1:2181
